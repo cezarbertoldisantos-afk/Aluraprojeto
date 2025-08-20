@@ -1,33 +1,85 @@
+/* === Reset básico === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+/* === Fundo e texto === */
 body {
-    color: white;
-    background: black;
-    margin: 0px;
-    font-family: "Chakra Petch", sans-serif;
+    background-color: #0b0b0d; /* preto azulado */
+    color: #f1f1f1; /* texto claro */
+    line-height: 1.6;
 }
 
+/* === Cabeçalho === */
 header {
-    border-bottom: solid 2px rgb(42, 122, 228);
+    background-color: #1a1a1d;
+    color: #e63946; /* vermelho sangue */
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
     padding: 20px;
-    font-size: 32px;
-    color: rgb(42, 122, 228);
+    letter-spacing: 2px;
+    border-bottom: 3px solid #e63946;
 }
 
-section {
-    background: rgb(184, 156, 213);
-    padding-bottom: 80px;
-    padding-top: 80px;
+/* === Seção principal (chamada) === */
+.chamada {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #1a1a1d, #0b0b0d);
+    gap: 20px;
+}
+
+.chamada-texto h1 {
+    font-size: 2.5rem;
+    color: #e63946;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 10px black;
+}
+
+.chamada-texto p {
+    font-size: 1.2rem;
+    color: #9f9f9f;
+}
+
+/* === Categoria de vídeos === */
+.categoria {
+    padding: 30px 20px;
+}
+
+.categoria h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #e63946;
+    border-left: 5px solid #e63946;
+    padding-left: 10px;
+}
+
+.categoria-videos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
     justify-content: center;
 }
 
-.chamada-texto {
-    margin-right: 5%;
+.categoria-videos a {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-h1 {
-    font-size: 40px;
+.categoria-videos img {
+    width: 280px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #e63946;
 }
 
-p {
-    font-size: 20px;
+.categoria-videos a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #e63946aa;
 }
