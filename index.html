@@ -20,7 +20,7 @@
         </div>
 
         <div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/64dJcT2dqJU"
+            <iframe width="560" height="315" src="https://youtu.be/q3h98qqikyA?si=6r6AtUX8ijOPIXly"
                 title="Trailer A Casa Monstro" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -31,19 +31,19 @@
         <h2>Mais sobre A Casa Monstro</h2>
         <div class="categoria-videos">
             <a href="https://www.youtube.com/watch?v=64dJcT2dqJU">
-                <img src="https://img.youtube.com/vi/64dJcT2dqJU/maxresdefault.jpg" alt="Trailer 1" />
+                <img src="https://img.youtube.com/vi/64dJcT2dqJU/maxresdefault.jpg" />
             </a>
             <a href="https://www.youtube.com/watch?v=tYdyViZz3i0">
-                <img src="https://img.youtube.com/vi/tYdyViZz3i0/maxresdefault.jpg" alt="Trailer 2" />
+                <img src="https://img.youtube.com/vi/tYdyViZz3i0/maxresdefault.jpg" />
             </a>
             <a href="https://www.youtube.com/watch?v=YHTsS3TMZeE">
-                <img src="https://img.youtube.com/vi/YHTsS3TMZeE/maxresdefault.jpg" alt="Trailer 3" />
+                <img src="https://img.youtube.com/vi/YHTsS3TMZeE/maxresdefault.jpg" />
             </a>
             <a href="https://www.youtube.com/watch?v=DPWmEOsHftI">
-                <img src="https://img.youtube.com/vi/DPWmEOsHftI/maxresdefault.jpg" alt="Trailer 4" />
+                <img src="https://img.youtube.com/vi/DPWmEOsHftI/maxresdefault.jpg" />
             </a>
             <a href="https://www.youtube.com/watch?v=G8J3n67D3j8">
-                <img src="https://img.youtube.com/vi/G8J3n67D3j8/maxresdefault.jpg" alt="Trailer 5" />
+                <img src="https://img.youtube.com/vi/G8J3n67D3j8/maxresdefault.jpg" />
             </a>
         </div>
     </section>
@@ -51,3 +51,91 @@
 </body>
 
 </html>
+
+style 
+
+/* === Reset básico === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+/* === Fundo e texto === */
+body {
+    background-color: #0b0b0d; /* preto azulado */
+    color: #f1f1f1; /* texto claro */
+    line-height: 1.6;
+}
+
+/* === Cabeçalho === */
+header {
+    background-color: #1a1a1d;
+    color: #e63946; /* vermelho sangue */
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 20px;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #e63946;
+}
+
+/* === Seção principal (chamada) === */
+.chamada {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #1a1a1d, #0b0b0d);
+    gap: 20px;
+}
+
+.chamada-texto h1 {
+    font-size: 2.5rem;
+    color: #e63946;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 10px black;
+}
+
+.chamada-texto p {
+    font-size: 1.2rem;
+    color: #9f9f9f;
+}
+
+/* === Categoria de vídeos === */
+.categoria {
+    padding: 30px 20px;
+}
+
+.categoria h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #e63946;
+    border-left: 5px solid #e63946;
+    padding-left: 10px;
+}
+
+.categoria-videos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.categoria-videos a {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.categoria-videos img {
+    width: 280px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #e63946;
+}
+
+.categoria-videos a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #e63946aa;
+}
